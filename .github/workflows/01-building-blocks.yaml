@@ -1,0 +1,27 @@
+name: 01 - building blocks
+
+on: push
+
+jobs:
+    echo-hello:
+        runs-on: ubunto-latest
+        steps:
+            - name: Say hello
+              run: echo "hello world, my name is yassine."
+        
+    say-goodbye:
+        runs-on: ubunto-latest
+        steps:
+            - name: Failed step
+              run: |
+                echo "i will fail"
+                exit 1
+        
+            - name: Say good bye
+              run: echo "good bye.!"
+    
+            
+            
+    
+               
+    
