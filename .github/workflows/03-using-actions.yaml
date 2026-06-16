@@ -15,4 +15,4 @@ jobs:
               with:
                 node-version: '24.x'
             - name: install dependencies
-              run: npm ci
+              run: npm install
