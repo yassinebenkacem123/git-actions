@@ -1,0 +1,13 @@
+name: using-actions
+
+on:
+    push:
+
+jobs:
+    build:
+        runs-on: ubunto-latest
+        steps:
+            - name: checkout code
+              uses: actions/checkout@4
+            - name: printing folders
+              run: ls
