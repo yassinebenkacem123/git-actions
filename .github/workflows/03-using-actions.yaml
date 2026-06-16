@@ -1,4 +1,4 @@
-name: using-actions
+name: 03-using-actions
 
 on:
     push:
