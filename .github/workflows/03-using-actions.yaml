@@ -6,6 +6,9 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: 03-using-actions
         steps:
             - name: checkout code
               uses: actions/checkout@v4
