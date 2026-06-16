@@ -1,11 +1,11 @@
-name: 03-using-actions
+name: 0 3- using-actions
 
 on:
     push:
 
 jobs:
     build:
-        runs-on: ubunto-latest
+        runs-on: ubuntu-latest
         steps:
             - name: checkout code
               uses: actions/checkout@4
