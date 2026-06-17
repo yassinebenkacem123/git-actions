@@ -1,8 +1,13 @@
 name: 06 - contexts
-
+run-name: Test The inputs feature  ${{ inputs.name }}
 on:
     push:
     workflow_dispatch:
+        inputs:
+           name:
+            type: string
+            default: "yassine is calling"
+    
       
 
 jobs:
@@ -17,7 +22,7 @@ jobs:
                 echo "Actor: ${{ github.actor }}"
                 echo "Workflow: ${{ github.workflow }}"
                 echo "Run ID: ${{ github.run_id }}"
-                echo "Run numer: ${{ github.run_number }}"
+                echo "Run number: ${{ github.run_number }}"
 
             - name: Retreive Variable
               run: |
