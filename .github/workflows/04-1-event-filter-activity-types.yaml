@@ -1,0 +1,30 @@
+name: 04 - 1 - event-filter-action-types
+
+on:
+    pull_request:
+
+        branches:
+            - main
+
+        paths-ignore:
+            - "*.md"
+        
+        types:
+            - opened
+            - synchronize
+
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Display a message
+              run: echo "the event filter and action types workflow passed well."
+
+
+            
+        
+
+
+        
+        
+
