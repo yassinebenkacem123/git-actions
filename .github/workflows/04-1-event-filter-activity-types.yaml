@@ -1,8 +1,7 @@
 name: 04 - 1 - event-filter-action-types
 
 on:
-    pull_request:
-
+    pull_request: 
         branches:
             - main
 
