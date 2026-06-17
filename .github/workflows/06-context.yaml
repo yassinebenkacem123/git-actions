@@ -1,0 +1,25 @@
+name: 06 - contexts
+
+on:
+    push:
+    workflow_dispatch:
+      
+
+jobs:
+    echo:
+        runs-on: ubunto-latest
+        steps:
+            - name: Display informations
+              run: |
+                echo "Event name: ${{ github.event_name}}"
+                echo "Ref: ${{ github.ref }}"
+                echo "SHA: ${{ github.sha }}"
+                echo "Actor: ${{ github.actor }}"
+                echo "Workflow: ${{ github.workflow }}"
+                echo "Run ID: ${{ github.run_id }}"
+                echo "Run numer: ${{ github.run_number }}"
+
+            - name: Retreive Variable
+              run: |
+                echo "Variable value: ${{vars.MY_VARIABLE}} "
+            
