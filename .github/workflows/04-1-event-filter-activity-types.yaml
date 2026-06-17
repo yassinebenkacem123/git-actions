@@ -3,11 +3,7 @@ name: 04 - 1 - event-filter-action-types
 on:
     pull_request: 
         branches:
-            - main
-
-        paths-ignore:
-            - "*.md"
-        
+            - main        
         types:
             - opened
             - synchronize
