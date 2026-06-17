@@ -1,0 +1,16 @@
+name: 04 - 2 - event-filter-action-types
+on:
+    pull_request:
+
+        branches:
+            - main
+
+        types:
+            - closed
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Display Message
+          run: ech "The PR Closed...."
