@@ -28,9 +28,6 @@ jobs:
             - name: Building
               run: npm run build
             
-            - name: Prview 
-              run: npm run preview
-            
             - name: Deploy to nonprod
               run: echo "Deploying to Non prod..."
             
